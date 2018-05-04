@@ -18,7 +18,7 @@ If you have never used the Composer dependency manager before, head to the [Comp
 
 ## Usage
 
-Using this JSON Key Value is designed to be super simple.
+Using the JSON Key Value Store is designed to be super simple.
 
 Here is a basic usage example:
 
