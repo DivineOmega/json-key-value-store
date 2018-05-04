@@ -122,4 +122,14 @@ final class BasicUsageTest extends TestCase
 
         return $this->assertNull($value);
     }
+
+    public function testDeletion()
+    {
+        $store = $this->createPopulatedStore();
+
+        $store->delete('testString');
+        $value = $store->get('testString');
+
+        return $this->assertNull($value);
+    }
 }

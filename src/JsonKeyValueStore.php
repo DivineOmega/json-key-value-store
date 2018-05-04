@@ -83,4 +83,9 @@ class JsonKeyValueStore
 
         return $this->content->$key;
     }
+
+    public function delete($key) 
+    {
+        unset($this->content->$key);
+    }
 }
