@@ -1,6 +1,6 @@
 {
     "name": "divineomega/json-key-value-store",
-    "description": "Progress bar for command line PHP scripts",
+    "description": "A simple JSON based key value store",
     "type": "library",
     "license": "LGPL-3.0-only",
     "authors": [
