@@ -78,10 +78,9 @@ class JsonKeyValueStore
     public function get($key)
     {
         if (!isset($this->content->$key)) {
-            return null;
+            return;
         }
 
         return $this->content->$key;
     }
-
 }

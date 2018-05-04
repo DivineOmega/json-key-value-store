@@ -1,7 +1,7 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
 use DivineOmega\JsonKeyValueStore\JsonKeyValueStore;
+use PHPUnit\Framework\TestCase;
 
 final class BasicUsageTest extends TestCase
 {
@@ -33,7 +33,6 @@ final class BasicUsageTest extends TestCase
         $store->set('testObject', $testObj);
 
         return $store;
-
     }
 
     public function testCreateEmptyStore()
@@ -94,7 +93,7 @@ final class BasicUsageTest extends TestCase
 
         $value = $store->get('testInteger');
 
-        $this->assertTrue(is_integer($value));
+        $this->assertTrue(is_int($value));
         $this->assertEquals(12345, $value);
     }
 
