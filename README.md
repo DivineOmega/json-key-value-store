@@ -8,7 +8,7 @@ A simple JSON based key value store.
 
 ## Installation
 
-The `json-key-value-store` package can be easily installed using Composer. Just run the following command from the root of your project.
+This JSON Key Value Store package can be easily installed using Composer. Just run the following command from the root of your project.
 
 ```
 composer require divineomega/json-key-value-store
