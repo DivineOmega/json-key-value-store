@@ -5,3 +5,33 @@
 [![StyleCI](https://styleci.io/repos/132195531/shield?branch=master)](https://styleci.io/repos/132195531)
 
 A simple JSON based key value store.
+
+## Installation
+
+The `json-key-value-store` package can be easily installed using Composer. Just run the following command from the root of your project.
+
+```
+composer require divineomega/json-key-value-store
+```
+
+If you have never used the Composer dependency manager before, head to the [Composer website](https://getcomposer.org/) for more information on how to get started.
+
+## Usage
+
+Using this JSON Key Value is designed to be super simple.
+
+Here is a basic usage example:
+
+```php
+use DivineOmega\JsonKeyValueStore\JsonKeyValueStore;
+
+$store = new JsonKeyValueStore('store.json.gz');
+
+$store->set('key1', 'value123');
+$store->set('key2', 'value456');
+$store->delete('key2');
+
+$value = $store->get('key1');
+
+// $value = 'value123'
+```
