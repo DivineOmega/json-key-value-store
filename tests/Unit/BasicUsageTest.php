@@ -1,5 +1,7 @@
 <?php
 
+namespace DivineOmega\JsonKeyValueStore\Tests;
+
 use DivineOmega\JsonKeyValueStore\JsonKeyValueStore;
 use PHPUnit\Framework\TestCase;
 
