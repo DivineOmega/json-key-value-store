@@ -66,7 +66,7 @@ class JsonKeyValueStore
     }
 
     /**
-     * Save contents from store.
+     * Save contents to store.
      *
      * @throws Exception
      *
