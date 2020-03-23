@@ -41,7 +41,7 @@ final class BasicUsageTest extends TestCase
     {
         $store = $this->createNewStore();
 
-        $this->assertTrue(file_exists($store->getFile()));
+        $this->assertFileExists($store->getFile());
         $this->assertEquals('{}', gzdecode(file_get_contents($store->getFile())));
     }
 
@@ -85,7 +85,7 @@ final class BasicUsageTest extends TestCase
 
         $value = $store->get('testString');
 
-        $this->assertTrue(is_string($value));
+        $this->assertIsString($value);
         $this->assertEquals('stringValue', $value);
     }
 
@@ -95,7 +95,7 @@ final class BasicUsageTest extends TestCase
 
         $value = $store->get('testInteger');
 
-        $this->assertTrue(is_int($value));
+        $this->assertIsInt($value);
         $this->assertEquals(12345, $value);
     }
 
@@ -112,7 +112,7 @@ final class BasicUsageTest extends TestCase
         $testObj->pet->type = 'cat';
         $testObj->pet->name = 'Destructor';
 
-        $this->assertTrue(is_object($value));
+        $this->assertIsObject($value);
         $this->assertEquals($testObj, $value);
     }
 
