@@ -10,11 +10,13 @@
         }
     ],
     "require": {
-        "php": "^7.0"
+        "php": ">=7.1",
+        "ext-zlib": "*",
+        "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5",
-        "satooshi/php-coveralls": "^2.0"
+        "phpunit/phpunit": "^7.0 || ^8.0",
+        "php-coveralls/php-coveralls": "^2.0"
     },
     "autoload": {
         "psr-4": {

@@ -61,7 +61,7 @@ class JsonKeyValueStore
         $this->content = json_decode(gzdecode($rawContent));
 
         if ($this->content === null) {
-            throw new Exception('Invalid store content');
+            throw new \Exception('Invalid store content');
         }
     }
 
